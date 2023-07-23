@@ -39,7 +39,7 @@ def yt_info_extrater(bshtm):
 @app.route("/",methods=["POST","GET"])
 def yt_get_info():
     if request.method=="POST":
-        url = request.form.get('url').replace(" ", "")
+        url = input(').replace(" ", "")
         options = Options()
         options.add_argument("--headless")
         driver = webdriver.Chrome(options=options)
